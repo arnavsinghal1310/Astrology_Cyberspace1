@@ -1,0 +1,353 @@
+/*  basic files starts*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 5000px;
+}
+/* basic files ends*/
+
+/* navigation starts*/
+.navbar{
+    padding: 20px 0 0 0;
+    border-bottom: none !important;
+    transition: all 0.5s ease-in-;
+}
+.navbar ul li a{
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.navbar ul li a:hover{
+    color: aqua !important;
+}
+.navbar-toggle{
+    border: 1px solid white !important; 
+    transition: all 0.5s ease-in;
+}
+.navbar-toggle:hover{
+    background-color: aqua !important;
+}
+.navbar-inverse .navbar-collapse{
+    border-color: white !important;
+}
+.navbar-inverse{
+    background-color: transparent !important;
+}
+/* navigation ends */
+
+/* sticky navigation with bg color */
+.secondary{
+    background-color: #34495e !important;
+}
+
+/* slider section starts */
+.slider{
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/mainphoto.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    position: relative;
+}
+.slider-content{
+    position: absolute;
+    top: 39%;
+    width: 100%;
+}
+.button{
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+.button:hover{
+    text-decoration: none;
+    color: white;
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+.social-links a.fa{
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    height: 35px;
+    border-radius: 25px;
+    margin-right: 2px; 
+    transition: all 0.5s ease-in;
+}
+.social-links a.fa:hover{
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: white;
+    border: 1px solid deepskyblue;
+}
+.text{
+    display: inline;
+    font-family: 'Sacramento',cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* slider section ends */
+
+/* About astrology start */
+.earth-img{
+    width: 25%;
+    margin-right: 30px;
+    float: left;
+}
+
+.padding-top-12 {
+   padding-top: 12px;
+}
+
+.padding-bottom-25 {
+   padding-bottom: 25px;
+}
+.move-p{
+    padding-right: 30%;
+}
+p{
+    display: block;
+    padding-bottom: 3%;
+}
+.button2{
+    padding-top: 20px;
+    padding: 10px 30px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;  
+}
+.button2:hover{
+    text-decoration: none;
+    background-color: deepskyblue;
+}
+/* About astrology end */
+
+/* Servises start */
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+}
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+}
+.service-wrap:hover:before{
+    left: -27px;
+    opacity: 1;
+}
+.service-wrap::after{
+    right: 100%;
+    bottom: -37px;
+}
+.service-wrap:hover:after{
+    right: -27px;
+    opacity: 1;
+}
+.service-wrap:hover{
+    color: white;
+}
+/* teams members */
+.our-experts{
+    margin: 0 25px;
+}
+.team-member-info{
+    padding: 10px 0 30px 0;
+}
+h4.team-member-name{
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+h4.team-member-designation{
+    color: deepskyblue;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.social-list{
+    padding-left: 0;
+}
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.social-list i{
+    font-size: 17px;
+}
+.icon-gray i{
+    color: gray;
+
+}
+.img-responsive{
+    width: 15%;
+    margin-left: 43%;
+}
+/* team members end */
+
+/* Counter start */
+.counters{
+    background-image: url(../images/tarot.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.counters i{
+    font-size: 50px;
+}
+.counter-items h2{
+    font-weight: bold;
+    font-size: 42px;
+    color: white;
+}
+.counters p{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* Counter ends */
+
+/* price package */
+.container{
+    width: 100%;
+}
+.packages{
+    margin: 20px;
+    width: 300px;
+    padding-bottom: 1.8em;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid rgb(97,104,101);
+    box-shadow: 2px 6px 25px #1e2321;
+    flex-wrap: wrap;
+    color: black;
+}
+.first-package{
+    color: deepskyblue;
+}
+h1,h2{
+    font-size: 2.2em;
+}
+.basic-list li{
+    font-size: 20px;
+    list-style: none;
+    border-bottom: 1px solid #f4f4f4;
+    padding-inline-start: 0;
+    border-width: 1px;
+}
+ol,ul{
+    padding: 0;
+}
+.top{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input,label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+.button{
+    padding-top: 20px;
+    padding: 10px 30px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;  
+}
+.button:hover{
+    text-decoration: none;
+    background-color: deepskyblue;
+}
+.package-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/*.sliderround{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e2321;
+    transform: translate(0px, 0px);
+    transition: 0.6s ease transform, 0.6s box-shadow;
+}
+/* Guest reviwes start */
+.carousel{
+    background-image: url(../images/experts.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+/* Guest reviews ends */
